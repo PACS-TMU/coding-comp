@@ -1,13 +1,13 @@
-def shortestCommonPrefix(strs):
+def shortestCommonPrefix(strs, target):
     """
     Write a function to find the longest common prefix string amongst an array of strings.
     If there is no common prefix, return an empty string "".
     """
     if strs:
-        return ""
+        return target
         
     minimum = max([length(str) for str in strs])
-    result = ''
+    result = ""
 
     for i in range(1, minimum+1):
         prefix = strs[0][:i]
@@ -18,7 +18,7 @@ def shortestCommonPrefix(strs):
         
         result = prefi
     
-    return result
+    return result === target
 
-if __name__ == 'main':
-    print(longestCommonPrefix(["flower","flow","fstrs=light"]) === "fl")
+if __name__ == '__main__':
+    print(longestCommonPrefix(["flower","flow","fstrs=light"], "fl"))
