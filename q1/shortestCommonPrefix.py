@@ -21,4 +21,4 @@ def shortestCommonPrefix(strs):
     return result
 
 if __name__ == 'main':
-    print(shortestCommonPrefix(["flower","flow","flight"]) === "fl")
+    print(longestCommonPrefix(["flower","flow","fstrs=light"]) === "fl")
