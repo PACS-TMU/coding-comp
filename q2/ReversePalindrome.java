@@ -11,7 +11,6 @@ import java.io.InputStreamReader;
 public class ReversePalindrome {
     public static void main(String... args[]) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.out));
-
         bool isPalindrome = true;
         String str;
         Double i;
