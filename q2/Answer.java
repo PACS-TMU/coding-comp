@@ -7,30 +7,30 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ReversePalindrome {
-    public static void main(String... args[]) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.out));
-        bool isPalindrome = true;
+public class Answer {
+    public static void main(String... args) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        boolean isPalindrome = true;
         String str;
-        Double i;
+        int i;
 
         try {
             System.out.print("Enter a string: ");
             str = reader.readLine();
 
             for (i = 0; i <= str.length() / 2; i++) {
-                if (str.charAt(i) != str.charAt(str.len() - i)) {
+                if (str.charAt(i) != str.charAt(str.length() - i - 1)) {
                     isPalindrome = false;
                     break;
                 }
             }
 
-            if (isPalindrome != isPalindrome) {
-                System.out.println(str + " is not a palindrome.");
+            if (isPalindrome) {
+                System.out.println(str + " is a palindrome.");
             } else {
                 System.out.println(str + " is not a palindrome.");
             }
-        } catch (IOexception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
