@@ -53,12 +53,14 @@ public class TestCases {
             fail += 1;
         }
 
-        System.out.println("---------------------------------------------");
+        System.out.println("-------------------------------------------------------------------");
         System.out.println("Ran 7 tests");
         if (fail > 0) {
+            System.out.println();
             System.out.println("FAILED (failures="+fail+")");
         } else {
-            System.out.println("\nOK");
+            System.out.println();
+            System.out.println("OK");
         }
     }
 }
