@@ -1,5 +1,5 @@
 import unittest
-from Answer import longestCommonPrefix
+from shortestCommonPrefix import longestCommonPrefix
 
 class TestLongestCommonPrefix(unittest.TestCase):
     def test_basic_case(self):
