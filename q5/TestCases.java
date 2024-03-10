@@ -2,7 +2,6 @@ public class TestCases {
     private final CountAndSay ans = new CountAndSay();
 
     public void testAll() {
-        int pass = 0;
         int fail = 0;
 
         // Test case 1
@@ -11,17 +10,12 @@ public class TestCases {
             System.out.println("Test case 1 failed. Expected: 13112221, Actual: " + result1);
             fail += 1;
         }
-        else {
-            pass += 1;
-        }
 
         // Test case 2
         String result2 = ans.sayCount("13112221");
         if (!result2.equals("1113213211")) {
             System.out.println("Test case 2 failed. Expected: 1113213211, Actual: " + result2);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         // Test case 3
@@ -29,8 +23,6 @@ public class TestCases {
         if (!result3.equals("111213141516171819")) {
             System.out.println("Test case 3 failed. Expected: 111213141516171819, Actual: " + result3);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         // Test case 4
@@ -38,8 +30,6 @@ public class TestCases {
         if (!result4.equals("31232112")) {
             System.out.println("Test case 4 failed. Expected: 11133112, Actual: " + result4);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         // Test case 5
@@ -47,8 +37,6 @@ public class TestCases {
         if (!result5.equals("51221310")) {
             System.out.println("Test case 5 failed. Expected: 51221310, Actual: " + result5);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         // Test case 6
@@ -56,8 +44,6 @@ public class TestCases {
         if (!result6.equals("")) {
             System.out.println("Test case 6 failed. Expected: \"\", Actual: " + result6);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         // Test case 7
@@ -65,8 +51,6 @@ public class TestCases {
         if (result7 != "") {
             System.out.println("Test case 7 failed. Expected: null, Actual: " + result7);
             fail += 1;
-        } else {
-            pass += 1;
         }
 
         System.out.println("---------------------------------------------");

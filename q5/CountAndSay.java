@@ -7,7 +7,7 @@ public class CountAndSay {
      * To run the program, run javac CountAndSay.java TestCases.java in terminal
      * Then java CountAndSay.java as well
      */
-    public static String sayCount(String digits) {
+    public String sayCount(String digits) {
         return "";
     }
 
