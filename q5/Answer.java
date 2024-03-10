@@ -1,8 +1,7 @@
 public class Answer {
     /*
      * Count and Say Sequence
-     * Implement a program where you count the number of consecutive digits in a
-     * string.
+     * Implement a program where you count the number of consecutive digits in a string.
      * For example: "111112230", the function should return "51221310"
      * To run the program, run javac Answer.java TestCases.java in terminal
      * Then java Answer.java in terminal
