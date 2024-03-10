@@ -1,5 +1,5 @@
 public class TestCases {
-    private final CountAndSay ans = new CountAndSay();
+    private final Answer ans = new Answer();
 
     public void testAll() {
         int fail = 0;
@@ -53,8 +53,14 @@ public class TestCases {
             fail += 1;
         }
 
+        String result8 = ans.sayCount("6");
+        if (!result8.equals("16")) {
+            System.out.println("Test case 8 failed. Expected: 16, Actual: " + result8);
+            fail += 1;
+        }
+
         System.out.println("-------------------------------------------------------------------");
-        System.out.println("Ran 7 tests");
+        System.out.println("Ran 8 tests");
         if (fail > 0) {
             System.out.println();
             System.out.println("FAILED (failures="+fail+")");
