@@ -1,5 +1,5 @@
 public class TestCases {
-    private final Answer ans = new Answer();
+    private final CountAndSay ans = new CountAndSay();
 
     public void testAll() {
         int fail = 0;
