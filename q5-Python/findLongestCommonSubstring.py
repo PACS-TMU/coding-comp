@@ -1,7 +1,13 @@
+import unittest
+import TestCases
+
+# Given a list of words, find the longest common substring among all the words.
+# For example, given the list ["appleisred", "grapeisreadytoeat", "johnisright", "thisisreal"], the longest common substring is "is".
 def findLongestCommonSubstring(words):
     n = len(words)
     baseWord = words[0]
     baseLen = len(baseWord)
+    result = " "
 
     for i in range(baseLen):
         for j in range(i + 1, baseLen + 1):
@@ -16,9 +22,4 @@ def findLongestCommonSubstring(words):
     return result
 
 if __name__ == "__main__":
-    wordList1 = ["appleisred", "grapeisreadytoeat", "johnisright", "thisisreal"]
-    test1 = findLongestCommonSubstring(wordList1)
-    print(test1)
-    wordList2 = ["grace", "graceful", "disgraceful", "gracefully"]
-    test2 = findLongestCommonSubstring(wordList2)
-    print(test2)
+    unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(TestCases))

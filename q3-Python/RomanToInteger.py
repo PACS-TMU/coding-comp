@@ -1,5 +1,5 @@
 import unittest
-import Tester
+import TestCases
  
 def romanToInt(numbers: str) -> int:
     ''' Given a roman numeral, convert it to an integer. '''
@@ -11,4 +11,4 @@ def romanToInt(numbers: str) -> int:
     return result
 
 if __name__ == '__main__':
-    unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(Tester))
+    unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(TestCases))

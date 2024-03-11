@@ -1,3 +1,6 @@
+import unittest
+import TestCases
+
 def intersection(nums1, nums2):
     result = []
     set_nums1 = set(nums1)
@@ -8,3 +11,6 @@ def intersection(nums1, nums2):
             nums2.remove(num)
 
     return result
+
+if __name__ == '__main__':
+    unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(TestCases))
