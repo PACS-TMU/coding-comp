@@ -1,4 +1,4 @@
-public class Answer {
+public class AnswerCountAndSay {
     /*
      * Count and Say Sequence
      * Implement a program where you count the number of consecutive digits in a string.
@@ -30,7 +30,7 @@ public class Answer {
     }
 
     public static void main(String[] args) {
-        TestCases test = new TestCases();
+        TestCasesCountAndSay test = new TestCasesCountAndSay();
         test.testAll();
     }
 }

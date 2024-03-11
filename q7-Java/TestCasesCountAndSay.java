@@ -1,4 +1,4 @@
-public class TestCases {
+public class TestCasesCountAndSay {
     private final CountAndSay ans = new CountAndSay();
 
     public void testAll() {
@@ -70,4 +70,3 @@ public class TestCases {
         }
     }
 }
-

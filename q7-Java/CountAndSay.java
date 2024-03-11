@@ -13,7 +13,7 @@ public class CountAndSay {
     }
 
     public static void main(String[] args) {
-        TestCases test = new TestCases();
+        TestCasesCountAndSay test = new TestCasesCountAndSay();
         test.testAll();
     }
 }
