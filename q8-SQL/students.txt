@@ -1,0 +1,10 @@
+I'm looking to find the 'student id' and 'name' of all the Comp Sci majors.
+I have some SQL code but I think ive made some syntax mistakes.
+
+This is how my answer should look:
+
+2|Joanna|Comp Sci
+5|Bennie|Comp Sci
+
+I've inserted some comments on my comments to try and explain what I'm doing.
+Can you help me?
