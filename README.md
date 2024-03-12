@@ -20,13 +20,13 @@ All the python questions will run the `TestCases.py` file when they are run in t
 ### Java
 To run the java questions, `cd` into the question directory and run:
 
-```bash
-javac <FILE-NAME>
+```shell
+javac <PATH-TO-FILE>
 ```
 
 Any errors will be shown during the compilation. After you compile successfully, run:
 
-```
+```shell
 java <FILE-NAME>
 ```
 
