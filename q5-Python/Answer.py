@@ -1,27 +1,25 @@
 import unittest
 import TestCases
 
-def findLongestCommonSubstring(words):
-    if len(words) <= 1:
-        return ""
+# You are climbing a staircase. It takes n steps to reach the top.
+# Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+# make sure it is O(n) time. You only need one loop! We are testing the efficiency of your code.
 
-    n = len(words)
-    baseWord = words[0]
-    baseLen = len(baseWord)
-    result = ""
+def climbStairs(n: int) ->  int:
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
 
-    for i in range(baseLen):
-        for j in range(i + 1, baseLen + 1):
-            stem = baseWord[i:j]
-            k = 1
-            for k in range(1, n):
-                if stem not in words[k]:
-                    break
+    prev, curr = 1, 2
 
-            if k + 1 == n and len(result) < len(stem):
-                result = stem
+    # dont need index
+    for _ in range(2, n):
+        step = prev + curr
+        prev = curr
+        curr = step
 
-    return result
+    return curr
 
 if __name__ == "__main__":
     unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromModule(TestCases))

@@ -1,30 +1,27 @@
 import unittest
-from findLongestCommonSubstring import findLongestCommonSubstring
+from ClimbStair import climbStairs
 
-class TestFindLongestCommonSubstring(unittest.TestCase):
-    def test_basic_case(self):
-        self.assertEqual(findLongestCommonSubstring(["appleisred", "grapeisreadytoeat", "johnisright", "thisisreal"]), "isr")
+class TestClimbStair(unittest.TestCase):
+    def test_three(self):
+        self.assertEqual(climbStairs(3), 3)
 
-    def test_all_words_same(self):
-        self.assertEqual(findLongestCommonSubstring(["apple", "apple", "apple", "apple"]), "apple")
+    def test_four(self):
+        self.assertEqual(climbStairs(4), 5)
     
-    def test_no_common_substring(self):
-        self.assertEqual(findLongestCommonSubstring(["apple", "grape", "john", "this"]), "")
+    def test_five(self):
+        self.assertEqual(climbStairs(5), 8)
 
-    def test_single_word(self):
-        self.assertEqual(findLongestCommonSubstring(["apple"]), "")
+    def test_eleven(self):
+        self.assertEqual(climbStairs(11), 144)
 
-    def test_empty_list(self):
-        self.assertEqual(findLongestCommonSubstring([]), "")
+    def test_fourty_five(self):
+        self.assertEqual(climbStairs(45), 1836311903)
 
-    def test_single_letter(self):
-        self.assertEqual(findLongestCommonSubstring(["grace", "disgraceful", "grace", "joy"]), "grace")
+    def test_thirty_two(self):
+        self.assertEqual(climbStairs(32), 3524578)
 
-    def test_single_letter_repeated(self):
-        self.assertEqual(findLongestCommonSubstring(["a", "a", "a", "a"]), "a")
-
-    def test_abc_case(self):
-        self.assertEqual(findLongestCommonSubstring(["abcdef", "bcde", "cdefg"]), "bcde")
+    def test_nine_plus_ten(self):
+        self.assertEqual(climbStairs(21), 17711)
         
 if __name__ == '__main__':
     unittest.main() 
