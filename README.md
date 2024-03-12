@@ -18,8 +18,19 @@ python <PATH-TO-FILE>
 All the python questions will run the `TestCases.py` file when they are run in the terminal.
 
 ### Java
-TBD
+To run the java questions, `cd` into the question directory and run:
 
+```bash
+javac <FILE-NAME>
+```
+
+Any errors will be shown during the compilation. After you compile successfully, run:
+
+```
+java <FILE-NAME>
+```
+
+This will run all the test cases automatically, and you can see which you passed or failed.
 ### SQL
 For the SQL question, you will have to edit the `students.sql` file and then test it by doing a series of steps:
 
