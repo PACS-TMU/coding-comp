@@ -2,6 +2,9 @@ import unittest
 import TestCases
 
 def findLongestCommonSubstring(words):
+    if len(words) <= 1:
+        return ""
+
     n = len(words)
     baseWord = words[0]
     baseLen = len(baseWord)

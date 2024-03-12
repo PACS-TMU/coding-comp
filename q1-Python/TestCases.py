@@ -1,5 +1,5 @@
 import unittest
-from shortestCommonPrefix import longestCommonPrefix
+from Answer import longestCommonPrefix
 
 class TestLongestCommonPrefix(unittest.TestCase):
     def test_basic_case(self):
@@ -25,6 +25,9 @@ class TestLongestCommonPrefix(unittest.TestCase):
 
     def test_mixed_case(self):
         self.assertEqual(longestCommonPrefix(["Apple", "apple", "APPLE"]), "")
+
+    def test_abc_case(self):
+        self.assertEqual(longestCommonPrefix(["abcdef", "bcde", "cdefg"]), "")
 
 if __name__ == '__main__':
     unittest.main()

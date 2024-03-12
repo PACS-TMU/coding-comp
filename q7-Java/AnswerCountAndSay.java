@@ -1,11 +1,13 @@
 public class AnswerCountAndSay {
     /*
      * Count and Say Sequence
-     * Implement a program where you count the number of consecutive digits in a string.
+     * Implement a program where you count the number of consecutive digits in a
+     * string, and print the count, and then the number.
      * For example: "111112230", the function should return "51221310"
-     * To run the program, run javac Answer.java TestCases.java in terminal
-     * Then java Answer.java in terminal
-     * Make sure to create an algorithm that runs in O(n) to get full points for this question.
+     * To run the program, run javac AnswerCountAndSay.java TestCases.java
+     * Then java AnswerCountAndSay.java
+     * Make sure to create an algorithm that runs in O(n) to get full points for
+     * this question.
      * In other words, make sure there are no nested loops.
      */
     public String sayCount(String digits) {
@@ -16,7 +18,7 @@ public class AnswerCountAndSay {
         String say = "";
         int count = 1;
 
-        for (int i = 1; i < digits.length(); i++) {               
+        for (int i = 1; i < digits.length(); i++) {
             if (digits.charAt(i) == digits.charAt(i - 1)) {
                 count++;
             } else {
@@ -25,8 +27,8 @@ public class AnswerCountAndSay {
             }
         }
         say += count + "" + digits.charAt(digits.length() - 1);
-        
-        return say;   
+
+        return say;
     }
 
     public static void main(String[] args) {
